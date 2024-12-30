@@ -15,16 +15,10 @@ print("Enjoy using this script! :D")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bkkpro1980/InfilSense/main/main.lua"))()
 ```
 
-## Script updated!
-TIME - DD/MM/YYYY GMT+7
-### 00:43 - 14/12/2567
-```diff
-+ adjusted bring functions
-+ loopws, and infinite jump functions
-+ gui toggle keybind can be set now
-```
+## Change logs are in the Discord server.
 
 The 2 code blocks below is an old version with the old GUI, it will not be updated regularly / at all
+
 ```lua
 --[[This is made by
 ░█▀▄░█░█░█░█░█▀█░█▀▄░█▀█░▀█░░▄▀▄░▄▀▄░▄▀▄
