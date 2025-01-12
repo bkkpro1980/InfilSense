@@ -8,14 +8,15 @@
 ░▀▀░░▀░▀░▀░▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀▀░░░▀░░░▀░
 ]]
 -- DISCORD = https://discord.gg/VDQgaCxUtD
+-- Use the loadstring only or it might break
 
-print("This is an indev gui, please give feedbacks to the developer.")
+print("Please give feedbacks to the developer.")
 print("Enjoy using this script! :D")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bkkpro1980/InfilSense/main/main.lua"))()
 ```
 
-## Change logs are in the Discord server.
+## Change logs will be located in the Discord server.
 
 The 2 code blocks below is an old version with the old GUI, it will not be updated regularly / at all
 
@@ -26,8 +27,10 @@ The 2 code blocks below is an old version with the old GUI, it will not be updat
 ░▀▀░░▀░▀░▀░▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀▀░░░▀░░░▀░
 ]]
 -- DISCORD = https://discord.gg/VDQgaCxUtD
+-- Use the loadstring only or it might break
 
-print("This gui will not be regularly updated.")
+print("This version will not be regularly updated.")
+-- Get the new versions from https://github.com/bkkpro1980/InfilSense
 print("Enjoy using this script! :D")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bkkpro1980/InfilSense/main/main-old.lua"))()
@@ -47,6 +50,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bkkpro1980/InfilSense
 ░▀▀░░▀░▀░▀░▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀▀░░░▀░░░▀░
 ]]
 -- DISCORD = https://discord.gg/VDQgaCxUtD
+-- Use the loadstring only or it might break
 
 error("This script is now broken, please use the old version, or the main version.")
 
