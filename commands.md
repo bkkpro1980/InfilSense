@@ -1,54 +1,143 @@
-## ESP Category
-- ESP: Grants you enhanced vision abilities (like a sixth sense), allowing you to see all NPCs through walls and obstacles, giving you a huge tactical advantage.
-- Distance: Displays the exact distance between you and any visible NPC, which is useful for sniping, sneaking, or gauging how much time you have before an NPC reaches you. This is used with the original ESP function.
-- Stuff Esp: Highlights interactable or important in-game objects such as safes, terminals, or lootable items.
-- Cleaner ESP: A visually cleaner and more refined version of regular ESP. Offers better aesthetics, but might slightly impact performance on low-end devices.
+# ESP Functions  
+- **Stuff ESP**: Highlights mission-critical objects like safes, computers, loot containers, and interactable items with markers.
+- **Cleaner ESP**: A visually cleaner and more refined ESP. Offers better aesthetics, but might slightly impact performance on low-end devices.
 
-## Telekinesis Category
-- Old Telekinesis: Gives you the power to manipulate NPCs using your mouse cursor. A legacy version that still works in fun and unexpected ways. 
-- Better Locking: Enhances the 'Old Telekinesis' system by locking the first npc that got selected until this is disabled, reducing glitches and misfires.
-- Bye Bye: Sends the targeted NPC 100 studs below the map, essentially removing them from play. Fun and chaotic when combined with other powers. To be used with 'Old Telekinesis'
-- Telekinesis: The newer telekinetic control system that lets you grab and move NPCs with ease, following your mouse in real time. For some reason, this is also able to be used on objects (e.g. Bags, Tools).
-- Telekinesis Fling: Takes telekinetic control further by violently flinging NPCs using physics, launching them hilariously.
+---
 
-## Loadouts Category
-- Infinite Ammo: Provides an unlimited supply of bullets for all your guns. (except for thumpers, unfortunately).
-- Minigun: Transforms your weapon into a rapid-fire beast. Input a number for firerate; 30 is default. Ideal for creating chaos or becoming an Onyx unit.
-- Rainbow Guns: Visually modifies your equipped weapons with a rainbow color cycling effect. Purely cosmetic and client-sided, it’s just for the vibes.
-- Clear selected loadout: Allows you to remove all equipment from the current loadout slot. Use this before you spawn.
-- Add gear to loadout: Adds specific weapons or tools to your current loadout. Items marked with '*' is considered glitchy and will break your loadout page or even break the mission until you clear your loadout. Use this before you spawn.
+# Telekinesis Functions  
+- **Old Telekinesis**: Drag and manipulate NPCs/objects using mouse input. Works with physics-based interactions. This function is deprecated in favor of 'Telekinesis'
+    - Removed from the latest release.
+- **Better Locking**: Improves target retention for "Old Telekinesis" by reducing accidental drops during movement. This function is deprecated in favor of 'Telekinesis'
+    - Removed from the latest release. 
+- **Bye Bye**: Instantly teleports grabbed NPCs downward (100 studs) to remove them from play temporarily. This function is deprecated in favor of 'Telekinesis'
+    - Removed from the latest release.
+- **Telekinesis**: Move unanchored objects freely with your mouse. Will not work while holding a weapon.
+- **Telekinesis Fling**: Applies explosive force to grabbed targets, launching them at high velocity.
 
-# Fun Category
-- Kill Rose/Rivera: Eliminates either Rose or Rivera, depending on your current mission.
-- NPC Interact: Lets you toggle NPC behaviors like standing or crawling. Useful for cinematic setups, sneaky plays, or just messing around.
-- NPC Follow: Commands all available NPCs to start walking toward your current position. Can lead to some hilarious mobbing or dramatic entrances.
-- Loop Walkspeed: Continuously adjusts your character’s walk speed based on an input value. Default is 50, but you can go faster or slower.
-- Infinite Jump: Removes jump limits, allowing you to jump repeatedly in mid-air. Great for breaking the laws of physics.
+---
 
-# Bring Category
-- Bring Armed: Teleports an armed NPC (if one exists) directly to your location. Useful for isolating threats or testing AI behavior.
-- Bring Unarmed: Brings an unarmed NPC to you instead, ideal if you want someone harmless close by for RP or experimentation.
-- Bring All: Summons all NPCs, armed or not to your location. Pure chaos mode; be prepared.
-- Bring Type: Filters NPCs by name/type and brings only those to you. Perfect for targeting specific characters or avoiding the important ones.
-- Force Bring All: Just like 'Bring All', but looped so NPCs keep getting dragged to you over time. Even if they run off, they’ll be back.
-- Force Bring All Except Important People: Like above, but excludes "important" NPCs—those you probably don’t want to mess with.
-- Bring Bags: Teleports all ground bags near you—loot, gear, etc.—straight to your feet. Makes cleanup easy.
-- Loop Bring Bags: Continuously pulls bags to your position. Great if more are being dropped over time and you don’t want to keep pressing the button.
+# Loadouts Functions  
+- **Infinite Ammo**: Makes your ammo reserves infinite until you disable this function (excludes Thumper).
+- **Minigun**: Shoots really quickly (default: 30 RPM). Accepts numerical inputs for custom firerates.
+    - Arguments for 'Quick Command': [1] = Firerate
+- **Rainbow Guns**: Client-side cosmetic effect that cycles weapon through RGB color patterns.
+- **Clear Loadout**: Erases everything from your current loadout slot.
+- **Add Gear**: Injects custom equipment into loadouts. Supports non-standard items Items marked with * will cause your loadout page to break until you clear it.
+- **Set Primary**: Forces primary weapon selection override to bypass loadout UI glitches.
+- **Weapon mods**: Makes all weapons reload instantly, no recoil, no spread, penetrate almost anything, changes magazine sizes, and firerate. (Does not change firerate and magazine sizes for SMGs (S97, MM20)) Best results with 'Infinite Ammo' active.
+    - Executors that does not support 'getgc' and 'getraw' will not work
 
-## Other Category
-- No Fog: Removes all visual fog from the environment, giving you perfect clarity and visibility across the entire map.
-- No Flashbang: Nullifies the blinding effect of flashbangs, visually.
-- Unlock Doors: Unlocks all nearby doors for you. Others may not see them open right away, it’s client-sided until physically interacted with. Some doors cannot be opened with this function.
-- Fast Bagging: Speeds up the animation and process for bagging items. Best used in missions like The Withdrawal or Lakehouse once the bags are spawned.
-- Break Metal Detectors: Deletes essential parts of metal detectors, rendering them useless and allowing you to carry weapons past them undetected.
-- Heal Yourself: Restores your health completely. Can break certain mechanics like gun holding. Use cautiously, it’s glitchy. Usable on Elite and Legend difficulty.
-- Alt + Click Delete: Hold ALT and click on any object to delete it. A powerful dev-like feature, but use responsibly. Made at 5 AM, so it’s a bit wild.
-- FT Difficulty: Sets the mission difficulty for teleport commands. Choose the level, then confirm to prepare for forced teleports.
-- Force Teleport: Sends you to a selected mission based on your FT difficulty. May not always be stable, but it’s a fun shortcut.
-- Look Away: Forces NPCs to look in the opposite direction from you. Can help in stealth missions.
-- Set FOV: Changes your camera’s field of view. Input a value or default to 90. Wider FOV gives better peripheral vision, but may feel warped.
-- Less Class Restrictions: Makes you be able do some things that requires a certain class. e.g. Bypassing a door sensor without being an engineer.
-- Show Waypoints: Shows default NPC waypoints. No other explanations here.
+---
 
-## Autofarm Category
-- Scientist Autofarm: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. In order to use this, execute the function in the ready menu, then manually change your loadout to loadout 8 (if you haven't done that yet), the script should then set loadout 8 by itself, after that, it should start automatically, if it doesn't automatically start, you have to manually press ready.
+# Fun Functions  
+- **Kill Rose/Rivera**: Sets their health to 0. Simple.
+- **NPC Interact**: Toggles NPC animations between standing/crawling states. Does not disable pathfinding.
+- **NPC Follow**: Overrides AI pathfinding to force all NPCs to track and follow your position.
+- **Loop Walkspeed**: Sustains customized movement speed (default: 50).
+    - Arguments for 'Quick Command': [1] = Desired Walkspeed
+- **Infinite Jump**: Makes you be able to jump midair.
+
+---
+
+# NPC / Bring Functions  
+- **Bring Armed**: Teleports weapon-equipped NPCs to your position. Prioritizes hostile targets.
+- **Bring Unarmed**: Retrieves non-combatant NPCs. Ignores armed/hostile entities.
+- **Bring Type**: Attempts to bring all NPCs with certain types to you. Defaults to 'All'. 2nd boolean (true/false) argument (Auto hide new NPCs) available with 'Quick Command'.
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
+- **Force Bring All**: Continuous version of "Bring All" with configurable refresh rates.
+- **Force Bring All Except Important People**: Looped exclusion-based retrieval for non-VIP NPCs.
+- **Bring Bags**: Teleports loose loot bags to your feet. Works with mission-specific containers.
+- **Loop Bring Bags**: Automated version of "Bring Bags" with intervals.
+- **Hide NPCs**: Teleports the NPCs to somewhere hidden. Defaults to 'All'.
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
+- **Void NPCs**: Teleports the NPCs into the void. Defaults to 'All'.
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
+
+---
+
+# Other Functions  
+- **No Fog**: Disables environmental fog effects.
+- **No Flashbang**: Nullifies flashbang visual distortions.
+- **Unlock Doors**: Attempts to unlock every door in the mission. Some may not work. Others will not see unlock doors until you open the door.
+- **Fast Bagging**: Accelerates bag interaction in specific heists. Use when the bag can be interacted with.
+- **Break Metal Detectors**: Destroys metal detectors via part deletion.
+- **Alt + Click Delete**: Environment editor for deleting parts (Right-ALT + Left Click). No undo functionality.
+- **Set FOV**: Adjusts camera field-of-view. Toggleable with default restoration.
+    - Arguments for 'Quick Command': [1] = FOV
+- **Show Waypoints**: Shows default NPC waypoints. No other explanations here.
+- **Less Class Restrictions**: Better when used in the menu. Weakens role-based limitations and amplifies perk effectiveness.
+- **GodMode Yourself**: Makes yourself invulnerable when you're  (If you're playing singleplayer, then use 'Godmode All' instead.)
+- **Godmode All**: Invulnerability (Better with 2+ people alive.) Toggles with Elite+ difficulty requirements. Use 'Stop Godmode' and use a medkit to return back to normal health.
+- **Stop Godmode**: Terminates active godmode connections. Use a medkit to return back to normal health.
+
+---
+
+# Autofarm Commands  
+- **Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. In order to use this, execute the function in the ready menu, then manually change your loadout to loadout 8 (if you haven't done that yet), the script should then set loadout 8 by itself, after that, it should start automatically, if it doesn't automatically start, you have to manually press ready.
+
+---
+
+# Settings  
+- **Quick Command**: Allows you to quickly use commands by typing the id. Supports some arguments for commands. Set to 'true' and set a keybind to use. Scroll down to find the IDs.
+- **Don't copy Discord link on start**: Sets if the script should copy the Discord invite link to your clipboard when the script runs.
+-- **Don't auto load on each join**: Sets if the script auto load in missions, so you don't have to execute the script each time.
+- **More Command Info**: Copies a link to this page.
+
+---
+
+# Info
+**NPC types**:
+- g = "guard" (Guards, etc.)
+- w = "worker" (Employees, etc.)
+- v = "vip" (Manager, etc.)
+- ch = "chill" (Rose, etc.)
+- c = "civilian" (Civilian)
+- e = "enemy" (Swat, etc.)
+- m = "mixed" (Police, Halcyon Operative)
+- a = "all" (All of the above)
+
+---
+
+# Commands ID for 'Quick Commands' function
+- Stuff Esp: 1
+- Cleaner ESP: 2
+- Telekinesis: 3
+- Telekinesis Fling: 4
+- Infinite Ammo: 5
+- Minigun: 6
+- Rainbow Guns: 7
+- Clear current loadout: 8
+- Add gear to loadout*: 9
+- Set primary: 10
+- Weapon mods*: 11
+- Kill Rose/Rivera: 12
+- NPC Interact: 13
+- NPC Follow: 14
+- Loop Walkspeed: 15
+- Infinite Jump: 16
+- Bring Armed: 17
+- Bring Unarmed: 18
+- Bring Type: 19
+- Force Bring All: 20
+- Force Bring All Except Important People: 21
+- Bring Bags: 22
+- Loop Bring Bags: 23
+- Hide NPCs*: 24
+- Void NPCs*: 25
+- No Fog: 26
+- No Flashbang: 27
+- Unlock Doors: 28
+- Fast Bagging: 29
+- Break Metal Detectors: 30
+- Alt + Click Delete: 31
+- FT difficulty: 32
+- Force teleport: 33
+- Look Away: 34
+- Set FOV: 35
+- Show Waypoints: 36
+- Less Class Restrictions: 37
+- Godmode all: 38
+- Godmode yourself*: 39
+- Stop Godmode Functions: 40
+- Scientist Autofarm*: 41
+- More Command Info Link: 45
