@@ -42,16 +42,20 @@
 # NPC / Bring Functions  
 - **Bring Armed**: Teleports weapon-equipped NPCs to your position. Prioritizes hostile targets.
 - **Bring Unarmed**: Retrieves non-combatant NPCs. Ignores armed/hostile entities.
-- **Bring Type**: Attempts to bring all NPCs with certain types to you. Defaults to 'All'. 2nd boolean (true/false) argument (Auto hide new NPCs) available with 'Quick Command'.
-    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
-- **Force Bring All**: Continuous version of "Bring All" with configurable refresh rates.
-- **Force Bring All Except Important People**: Looped exclusion-based retrieval for non-VIP NPCs.
+- **Bring Type**: Attempts to bring all NPCs with certain types to you. Defaults to 'All'.
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = forced (true/false)
+- **Force Bring All**: Continuous version of "Bring All" with configurable refresh rates. This function is deprecated in favor of 'Bring Type'
+    - Removed from the latest release.
+- **Force Bring All Except Important People**: Looped exclusion-based retrieval for non-VIP NPCs. This function is deprecated in favor of 'Bring Type'
+    - Removed from the latest release.
 - **Bring Bags**: Teleports loose loot bags to your feet. Works with mission-specific containers.
 - **Loop Bring Bags**: Automated version of "Bring Bags" with intervals.
 - **Hide NPCs**: Teleports the NPCs to somewhere hidden. Defaults to 'All'.
-    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/false)
 - **Void NPCs**: Teleports the NPCs into the void. Defaults to 'All'.
-    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/ false)
+    - Arguments for 'Quick Command': [1] = NPC type, [2] = loop (true/false)
+- **Stop Forced NPCs**: Stops any forced/looped NPC positions. Used after looping/forcing 'Bring Type', 'Hide NPCs', 'Void NPCs'.
+- **Disable Cameras**: Kills the camera operator(s). (If there are any.) Use before Hiding NPCs.
 
 ---
 
@@ -117,13 +121,13 @@
 - Infinite Jump: 16, infinitejump, infjump
 - Bring Armed: 17, bringarmed
 - Bring Unarmed: 18, bringunarmed
-- Bring Type: 19, bringtype, bring, bt
-- Force Bring All: 20, fba
-- Force Bring All Except Important People: 21, fbaecg
-- Bring Bags: 22, bringbags
-- Loop Bring Bags: 23, loopbringbags, loopbb
-- Hide NPCs*: 24, hidenpcs, hidenpc, hide
-- Void NPCs*: 25, voidnpcs, voidnpc, void
+- Bring Type*: 19, bringtype, bring, bt
+- Bring Bags: 20, bringbags
+- Loop Bring Bags: 21, loopbringbags, loopbb
+- Hide NPCs*: 22, hidenpcs, hidenpc, hide
+- Void NPCs*: 23, voidnpcs, voidnpc, void
+- Stop Forced NPCs: 24, stopforced, noforced, clearforced, unfreeze
+- Disable Cams: 25, disablecams, killcams, byecams, nocams
 - No Fog: 26
 - No Flashbang: 27, noflashbang, noflash
 - Unlock Doors: 28, unlockdoors
