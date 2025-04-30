@@ -80,7 +80,7 @@
 # Settings  
 - **Quick Command**: Allows you to quickly use commands by typing the id. Supports some arguments for commands. Set to 'true' and set a keybind to use. Scroll down to find the IDs.
 - **Don't copy Discord link on start**: Sets if the script should copy the Discord invite link to your clipboard when the script runs.
--- **Don't auto load on each join**: Sets if the script auto load in missions, so you don't have to execute the script each time.
+- **Don't auto load on each join**: Sets if the script auto load in missions, so you don't have to execute the script each time.
 - **More Command Info**: Copies a link to this page.
 
 ---
@@ -99,45 +99,44 @@
 ---
 
 # Commands ID for 'Quick Commands' function
-- Stuff Esp: 1
-- Cleaner ESP: 2
-- Telekinesis: 3
-- Telekinesis Fling: 4
-- Infinite Ammo: 5
-- Minigun: 6
-- Rainbow Guns: 7
-- Clear current loadout: 8
-- Add gear to loadout*: 9
-- Set primary: 10
-- Weapon mods*: 11
-- Kill Rose/Rivera: 12
-- NPC Interact: 13
-- NPC Follow: 14
-- Loop Walkspeed: 15
-- Infinite Jump: 16
-- Bring Armed: 17
-- Bring Unarmed: 18
-- Bring Type: 19
-- Force Bring All: 20
-- Force Bring All Except Important People: 21
-- Bring Bags: 22
-- Loop Bring Bags: 23
-- Hide NPCs*: 24
-- Void NPCs*: 25
+- Stuff Esp: 1, stuffesp
+- Cleaner ESP: 2, cleanesp
+- Telekinesis: 3, telekinesis, tele, tk
+- Telekinesis Fling: 4, telekinesisfling, telefling, tkfling, tkf
+- Infinite Ammo: 5, infammo, ia
+- Minigun: 6, minigun
+- Rainbow Guns: 7, rainbowguns, rgbguns
+- Clear current loadout: 8, clearloadout, cloadout
+- Add gear to loadout*: 9, addgear
+- Set primary: 10, setweapon
+- Weapon mods*: 11, weaponmods, wepmods, wpmods
+- Kill Rose/Rivera: 12, killr
+- NPC Interact: 13, npcinteract
+- NPC Follow: 14, npcfollow
+- Loop Walkspeed: 15, loopwalkspeed, loopws
+- Infinite Jump: 16, infinitejump, infjump
+- Bring Armed: 17, bringarmed
+- Bring Unarmed: 18, bringunarmed
+- Bring Type: 19, bringtype, bring, bt
+- Force Bring All: 20, fba
+- Force Bring All Except Important People: 21, fbaecg
+- Bring Bags: 22, bringbags
+- Loop Bring Bags: 23, loopbringbags, loopbb
+- Hide NPCs*: 24, hidenpcs, hidenpc, hide
+- Void NPCs*: 25, voidnpcs, voidnpc, void
 - No Fog: 26
-- No Flashbang: 27
-- Unlock Doors: 28
-- Fast Bagging: 29
-- Break Metal Detectors: 30
-- Alt + Click Delete: 31
-- FT difficulty: 32
-- Force teleport: 33
-- Look Away: 34
-- Set FOV: 35
-- Show Waypoints: 36
-- Less Class Restrictions: 37
-- Godmode all: 38
-- Godmode yourself*: 39
-- Stop Godmode Functions: 40
-- Scientist Autofarm*: 41
-- More Command Info Link: 45
+- No Flashbang: 27, noflashbang, noflash
+- Unlock Doors: 28, unlockdoors
+- Fast Bagging: 29, fastbag
+- Break Metal Detectors: 30, breakmetaldetectors, breakmetal, breakmd
+- Alt + Click Delete: 31, altdelete, altdel
+- FT difficulty: 32, settpmdiff
+- Force teleport: 33, teleportmission, tpmission
+- Look Away: 34, lookaway
+- Set FOV: 35, setfov
+- Show Waypoints: 36, showwaypoints, showwp
+- Less Class Restrictions: 37, lessclassres, lcr
+- Godmode all: 38, godmodeall
+- Godmode yourself*: 39, godmodeme
+- Stop Godmode Functions: 40, stopgod
+- Scientist Autofarm*: 41, sciauto
