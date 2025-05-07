@@ -77,7 +77,7 @@
 ---
 
 # Autofarm Commands  
-- **Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. In order to use this, execute the function in the ready menu, then manually change your loadout to loadout 8 (if you haven't done that yet), the script should then set loadout 8 by itself, after that, it should start automatically, if it doesn't automatically start, you have to manually press ready.
+- **Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. it should ready automatically, if it doesn't automatically ready, you have to manually press ready.
 
 ---
 
