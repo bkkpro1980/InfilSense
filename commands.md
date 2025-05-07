@@ -118,7 +118,7 @@
 - NPC Interact: 13, npcinteract
 - NPC Follow: 14, npcfollow
 - Loop Walkspeed: 15, loopwalkspeed, loopws
-- Infinite Jump: 16, infinitejump, infjump
+- Infinite Jump: 16, infinitejump, infjump, float
 - Bring Armed: 17, bringarmed
 - Bring Unarmed: 18, bringunarmed
 - Bring Type*: 19, bringtype, bring, bt
