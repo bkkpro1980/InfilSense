@@ -79,7 +79,8 @@
 ---
 
 ## Autofarm Commands
-- **Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. it should ready automatically, if it doesn't automatically ready, you have to manually press ready.
+- **Legacy Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. it should ready automatically, if it doesn't automatically ready, you have to manually press ready. This is the old version, use this instead of 'Scientist Autofarm' incase it doesn't work.
+- **Scientist Autofarm**: Automatically completes the Scientist mission for you. Extremely useful for farming rewards or XP with no effort. it should ready automatically, if it doesn't automatically ready, you have to manually press ready. This is the latest version which should be used instead of 'Legacy Scientist Autofarm'.
 
 ---
 
@@ -143,7 +144,8 @@
 - Set FOV: 36, setfov
 - Show Waypoints: 37, showwaypoints, showwp
 - Less Class Restrictions: 38, lessclassres, lcr
-- Godmode all: 39, godmodeall
-- Godmode yourself*: 40, godmodeme
+- Godmode all*: 39, godmodeall, godall
+- Godmode yourself*: 40, godmodeme, godme
 - Stop Godmode Functions: 41, stopgod
-- Scientist Autofarm*: 42, sciauto
+- Legacy Scientist Autofarm*: 42, legacysciauto, lsciauto
+- Scientist Autofarm*: 43, sciauto
