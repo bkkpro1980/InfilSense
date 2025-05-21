@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfilSense ToS</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;">
+    <link rel="icon" type="image/x-icon" href="Media/InfilSenseTransparentLogo.png">
+	<link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="retrowave-bg animate__animated animate__fadeIn"></div>
+    <div class="retro-tiles">
+        <div class="tile-grid animate__animated animate__slideInUp"></div>
+    </div>
+    <div id="particles-js"></div>
+
+    <header class="header animate__animated animate__fadeInDown">
+        <img src="Media/InfilSenseTransparentLogo.png" alt="InfilSense Logo" class="logo-image" width="40" height="40">
+        <div class="logo glow-effect cyberpunk-text">InfilSense</div>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link"><img src="Media/HomeIcons.png" alt="Home" width="25" height="25"> Home</a>
+            <a href="community.html" class="nav-link"><img src="Media/PeopleIcon.png" alt="Community" width="25" height="25"> Community</a>
+            <a href="terms.html" class="nav-link"><img src="Media/tos.png" alt="Terms of Service" width="20" height="20"> Terms of Service</a>
+            <a href="privacy.html" class="nav-link"><img src="Media/privacy.png" alt="Privacy Policy" width="20" height="20"> Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main class="terms-section">
+        <div class="terms-grid animate__animated animate__fadeInUp">
+            <div class="terms-card animate__animated animate__fadeIn">
+                <div class="card-icon">
+                    <img src="Media/tos.png" alt="ToS Icon" width="60" height="60">
+                </div>
+                <h3 class="infilsense-gradient">Terms of Service</h3>
+                <p><strong>Effective Date:</strong> 21/05/2025</p>
+
+                <h3>1. Usage Restrictions</h3>
+                <p>- You must not use this service to impersonate another user or bypass restrictions.</p>
+                <p>- Connecting a key for another user is strictly prohibited and may result in your account being blacklisted.</p>
+
+                <h3>2. Key System</h3>
+                <p>- Keys are unique and tied to your Roblox User ID.</p>
+                <p>- Generating a new key will invalidate previously issued keys.</p>
+                <p>- Keys are automatically disconnected if you leave the associated Discord server.</p>
+
+                <h3>3. Service Termination</h3>
+                <p>We reserve the right to terminate or suspend your access to the service at any time for violation of these terms or misuse of the system.</p>
+
+                <h3>4. Support and Errors</h3>
+                <p>If you encounter issues with the service, please open a support ticket via the appropriate Discord channel.</p>
+
+                <h3>5. Changes to Terms</h3>
+                <p>We may update these Terms at any time. Continued use of the service constitutes acceptance of any modifications.</p>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .terms-section {
+            padding: 60px 5% 0;
+            min-height: 100vh;
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
+            color: #ffffff;
+        }
+
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .terms-card {
+            background: rgba(3, 8, 20, 0.8);
+            border: 1px solid #101420;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #ffffff;
+            margin-bottom: 2rem;
+        }
+
+        .terms-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(90, 158, 248, 0.3);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #5A9EF8;
+        }
+
+        .terms-card h2, 
+        .terms-card h3, 
+        .terms-card p, 
+        .terms-card li {
+            color: #ffffff;
+        }
+
+        .terms-card ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .terms-card li {
+            margin-bottom: 10px;
+        }
+
+        .terms-btn {
+            background: linear-gradient(45deg, #5A9EF8, #3676EF);
+            border: none;
+            border-radius: 10px;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .terms-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(90, 158, 248, 0.5);
+        }
+
+        .terms-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5rem;
+            padding: 2rem;
+            background: rgba(3, 8, 20, 0.8);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #989BA3;
+            font-size: 1.1rem;
+        }
+
+        .terms-card::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .terms-card::-webkit-scrollbar-track {
+            background: rgba(3, 8, 20, 0.4);
+            border-radius: 4px;
+        }
+
+        .terms-card::-webkit-scrollbar-thumb {
+            background: #5A9EF8;
+            border-radius: 4px;
+        }
+
+        .terms-card::-webkit-scrollbar-thumb:hover {
+            background: #3676EF;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
