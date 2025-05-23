@@ -21,6 +21,165 @@
             opacity: 0;
             transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1000;
+        }
+
+        .hamburger-menu span {
+            width: 100%;
+            height: 3px;
+            background: #5A9EF8;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 2rem;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(3, 8, 20, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            text-align: center;
+            color: #989BA3;
+            font-size: 0.9rem;
+            z-index: 100;
+        }
+
+        .footer a {
+            color: #5A9EF8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #3676EF;
+        }
+
+        .hero {
+            padding: 120px 5% 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: nowrap;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 1200px) {
+            .button-container {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .download-btn {
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+
+            .header-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: rgba(3, 8, 20, 0.95);
+                backdrop-filter: blur(10px);
+                padding: 80px 20px 20px;
+                transition: right 0.3s ease;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header-nav.active {
+                right: 0;
+            }
+
+            .hamburger-menu.active span:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            .hamburger-menu.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-menu.active span:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+
+            .footer {
+                padding: 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 120px 5% 150px;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-image-container {
+                margin-top: 2rem;
+            }
+
+            .hero-image {
+                max-width: 80%;
+                max-height: 400px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -32,6 +191,11 @@
     <header class="header animate__animated animate__fadeInDown">
         <img src="Media/InfilSenseTransparentLogo.png" alt="InfilSense Logo" class="logo-image" width="40" height="40">
         <div class="logo glow-effect cyberpunk-text">InfilSense</div>
+        <button class="hamburger-menu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="header-nav">
             <a href="index.html" class="nav-link"><img src="Media/HomeIcons.png" alt="Home" width="25" height="25"> Home</a>
             <a href="community.html" class="nav-link"><img src="Media/PeopleIcon.png" alt="Community" width="25" height="25"> Community</a>
@@ -49,8 +213,8 @@
                 Elevate your gameplay with cutting-edge scripts designed to deliver a seamless, premium experience. Harness the power of the latest technologies to take your Entry Point adventure to unparalleled heights.
             </p>
             <div class="button-container animate__animated animate__bounceIn animate__delay-2s">
-				<a href="https://github.com/bkkpro1980/InfilSense/blob/main/README.md" target="_blank" class="download-btn cyberpunk-btn">
-					<img src="Media/GithubIcon.png" alt="Github Icon" class="github-icon" width="35rem" height="35rem">
+				<a href="community.html" class="download-btn cyberpunk-btn">
+					<img src="Media/DiscordIcon.png" alt="Github Icon" class="github-icon" width="35rem" height="35rem">
 					<i class="fas fa-github"></i>
 					<span>Get the script</span>
 					<div class="btn-glitch-effect"></div>
@@ -58,9 +222,13 @@
             </div>
         </div>
         <div class="hero-image-container animate__animated animate__fadeInRight animate__delay-1s">
-            <img src="Media/InfilSenseThumbnail.png" alt="InfilSense Thumbnail" class="hero-image hologram-effect">
+            <img src="Media/InfilSenseThumbnail.png" alt="InfilSense Thumbnail" class="hero-image hologram-effect" style="max-width: 80%; max-height: 500px; object-fit: contain;">
         </div>
     </main>
+
+    <footer class="footer">
+        <p>By using our service(s), you acknowledge that you have read, understood, and agree to be bound by our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
@@ -88,42 +256,56 @@
                 },
                 retina_detect: true
             });
-        });
 
-        const btn = document.querySelector('.download-btn');
-        btn.addEventListener('mouseover', () => {
-            btn.classList.add('glitch-effect');
-        });
-        btn.addEventListener('mouseout', () => {
-            btn.classList.remove('glitch-effect');
-        });
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.header-nav');
 
-        // The Glow Particles....
-        function createGlowParticle(x, y) {
-            const particle = document.createElement('div');
-            particle.className = 'glow-particle';
-            particle.style.left = `${x}px`;
-            particle.style.top = `${y}px`;
-            document.body.appendChild(particle);
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
 
-            setTimeout(() => {
-                particle.style.opacity = '1';
-                particle.style.transform = `translate(${Math.random() * 60 - 30}px, ${Math.random() * 60 - 30}px) scale(${Math.random() * 2 + 1})`;
-            }, 10);
+            document.addEventListener('click', (e) => {
+                if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
 
-            setTimeout(() => {
-                particle.style.opacity = '0';
-                particle.style.transform += ' scale(0.1)';
+            const btn = document.querySelector('.download-btn');
+            btn.addEventListener('mouseover', () => {
+                btn.classList.add('glitch-effect');
+            });
+            btn.addEventListener('mouseout', () => {
+                btn.classList.remove('glitch-effect');
+            });
+
+            function createGlowParticle(x, y) {
+                const particle = document.createElement('div');
+                particle.className = 'glow-particle';
+                particle.style.left = `${x}px`;
+                particle.style.top = `${y}px`;
+                document.body.appendChild(particle);
+
                 setTimeout(() => {
-                    document.body.removeChild(particle);
-                }, 500);
-            }, 1000);
-        }
+                    particle.style.opacity = '1';
+                    particle.style.transform = `translate(${Math.random() * 60 - 30}px, ${Math.random() * 60 - 30}px) scale(${Math.random() * 2 + 1})`;
+                }, 10);
 
-        document.addEventListener('mousemove', (e) => {
-            if (Math.random() < 0.1) {
-                createGlowParticle(e.clientX, e.clientY);
+                setTimeout(() => {
+                    particle.style.opacity = '0';
+                    particle.style.transform += ' scale(0.1)';
+                    setTimeout(() => {
+                        document.body.removeChild(particle);
+                    }, 500);
+                }, 1000);
             }
+
+            document.addEventListener('mousemove', (e) => {
+                if (Math.random() < 0.1) {
+                    createGlowParticle(e.clientX, e.clientY);
+                }
+            });
         });
     </script>
 </body>
