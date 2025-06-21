@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - InfilSense</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-error" class="error-message"></div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB1MUsCV6cnfTIsdAedHN_YHxRSs4roq9g",
+            authDomain: "infilsense.firebaseapp.com",
+            databaseURL: "https://infilsense-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "infilsense",
+            storageBucket: "infilsense.firebasestorage.app",
+            messagingSenderId: "519762948454",
+            appId: "1:519762948454:web:e705cfa4881b1f003d18a7",
+            measurementId: "G-5R1TE7L43Y"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="admin.js"></script>
+</body>
+</html> 
