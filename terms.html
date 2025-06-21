@@ -329,23 +329,5 @@
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger-menu');
-            const nav = document.querySelector('.header-nav');
-
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                nav.classList.toggle('active');
-            });
-
-            document.addEventListener('click', (e) => {
-                if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
-                    hamburger.classList.remove('active');
-                    nav.classList.remove('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
