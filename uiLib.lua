@@ -306,6 +306,30 @@ function module:SetSaveFileName(name)
 	saveFileLoc = name
 end
 
+function module:RenameSaveFile(name,rename)
+		local oldFile = name..".json"
+		local newFile = rename..".json"
+		if not isfile(oldFile) then
+			return false,"Original file does not exist."
+		end
+		if isfile(newFile) then
+			return false,"A file with the new name already exists."
+		end
+		local readS,content = pcall(readfile,oldFile)
+		if not readS then
+			return false,"Failed to read the original file."
+		end
+		local writeS = pcall(writefile,newFile,content)
+		if not writeS then
+			return false,"Failed to write to the new file."
+		end
+		local delS = pcall(delfile,oldFile)
+		if not delS then
+			return false,"Failed to delete the original file."
+		end
+		return true
+	end
+
 local guiClosed = false
 local tween1
 local tween2
@@ -511,19 +535,15 @@ local quickcmdListOrder = {}
 local quickcmdActive = false
 local quickcmdDB = false
 local function quickcmd(value,binded)
-	print(value,binded)
     if quickcmdDB then return end
     if binded then
-		print(1)
         if not quickcmdActive or not quickcmdUI:FindFirstChild("text") then return end
-		print(2)
         quickcmdDB = true
         local ti = TweenInfo.new(.2,Enum.EasingStyle.Quad,Enum.EasingDirection.Out)
         TS:Create(quickcmdUI,ti,{Position = UDim2.new(.5,0,0,5)}):Play()
         quickcmdUI.text:CaptureFocus()
         return
     end
-	print(3)
     if type(value) ~= "boolean" or not quickcmdUI or binded then return end
     quickcmdActive = value
 end
@@ -2579,24 +2599,26 @@ function module:Init()
 		end
 	end
 
-
 	local settingsPage = lib:AddPage("Settings")
 	settingsPage:AddSlider({
-		Title = "Quick Command",
-		Desc = "Check 'More Command Info' in the settings category.",
-		Action = ""
-	},quickcmd,{
-		UniqueCommandId = "IMPORTANT_QUICKCMD",
-		StartupAvailable = true,
-		Bindable = true
-	},
-	{
-		sliderType = "bool",
-		defVal = 1,
-		lowVal = 0,
-		maxVal = 1,
-		true
-	})
+			Title = "Quick Command",
+			Desc = "Check 'More Command Info' in the settings category.",
+			Action = ""
+		},
+		quickcmd,
+		{
+			UniqueCommandId = "IMPORTANT_QUICKCMD",
+			StartupAvailable = true,
+			Bindable = true
+		},
+		{
+			sliderType = "bool",
+			defVal = 1,
+			lowVal = 0,
+			maxVal = 1,
+			save = true
+		}
+	)
 
 	task.spawn(function()
 		while true do
@@ -2612,7 +2634,7 @@ function module:Init()
 		end
 	end)
 
-	print("["..libName.."]: Initialized successfully!")
+	--print("["..libName.."]: Initialized successfully!")
 
 	return lib
 end
