@@ -2563,6 +2563,7 @@ function module:Init()
 	end
 
 	function lib:GetQuickCommandsList()
+		print("[" .. libName .. "]: ---------- COMMANDS LIST OUTPUT START ----------\n")
 		local grouped = {} -- key = title .. "|" .. uniqueId, value = list of cmds
 		local keyOrder = {} -- preserve order for output
 
@@ -2592,11 +2593,12 @@ function module:Init()
 		end
 
 		if #output == 0 then
-			print("No quick commands found.")
+			print("[" .. libName .. "]: No quick commands found.")
 		else
-			writefile(libName .. "_commandIds.txt", table.concat(output, "\n"))
-			print("File written to: " .. libName .. "_commandIds.txt")
+			writefile(saveFileLoc .. "_commandIds.txt", table.concat(output, "\n"))
+			print("[" .. libName .. "]: File written to: " .. saveFileLoc .. "_commandIds.txt")
 		end
+		print("[" .. libName .. "]: \n---------- COMMANDS LIST OUTPUT END ----------")
 	end
 
 	local settingsPage = lib:AddPage("Settings")
