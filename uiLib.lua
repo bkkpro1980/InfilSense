@@ -2598,7 +2598,7 @@ function module:Init()
 			writefile(saveFileLoc .. "_commandIds.txt", table.concat(output, "\n"))
 			print("[" .. libName .. "]: File written to: " .. saveFileLoc .. "_commandIds.txt")
 		end
-		print("[" .. libName .. "]: \n---------- COMMANDS LIST OUTPUT END ----------")
+		print("\n[" .. libName .. "]: ---------- COMMANDS LIST OUTPUT END ----------")
 	end
 
 	local settingsPage = lib:AddPage("Settings")

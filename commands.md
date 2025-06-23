@@ -106,46 +106,47 @@
 ---
 
 ## Commands ID for 'Quick Commands' function
-- Stuff Esp: 1, stuffesp
-- Cleaner ESP: 2, cleanesp
-- Player ESP: 3, playeresp
-- Telekinesis: 4, telekinesis, tele, tk
-- Telekinesis Fling: 5, telekinesisfling, telefling, tkfling, tkf
-- Infinite Ammo: 6, infammo, ia
-- Minigun: 7, minigun
-- Rainbow Guns: 8, rainbowguns, rgbguns
-- Clear current loadout: 9, clearloadout, cloadout
-- Add gear to loadout*: 10, addgear
-- Set primary: 11, setweapon
-- Weapon mods*: 12, weaponmods, wepmods, wpmods
-- Kill Rose/Rivera: 13, killr
-- NPC Interact: 14, npcinteract
-- NPC Follow: 15, npcfollow
-- Loop Walkspeed: 16, loopwalkspeed, loopws
-- Infinite Jump: 17, infinitejump, infjump, float
-- Bring Armed: 18, bringarmed
-- Bring Unarmed: 19, bringunarmed
-- Bring Type*: 20, bringtype, bring, bt
-- Bring Bags: 21, bringbags
-- Loop Bring Bags: 22, loopbringbags, loopbb
-- Hide NPCs*: 23, hidenpcs, hidenpc, hide
-- Void NPCs*: 24, voidnpcs, voidnpc, void
-- Stop Forced NPCs: 25, stopforced, noforced, clearforced, unfreeze
-- Disable Cams: 26, disablecams, killcams, byecams, nocams
-- No Fog: 27
-- No Flashbang: 28, noflashbang, noflash
-- Unlock Doors: 29, unlockdoors
-- Fast Bagging: 30, fastbag
-- Break Metal Detectors: 31, breakmetaldetectors, breakmetal, breakmd
-- Alt + Click Delete: 32, altdelete, altdel
-- FT difficulty: 33, settpmdiff
-- Force teleport: 34, teleportmission, tpmission
-- Look Away: 35, lookaway
-- Set FOV: 36, setfov
-- Show Waypoints: 37, showwaypoints, showwp
-- Less Class Restrictions: 38, lessclassres, lcr
-- Godmode all*: 39, godmodeall, godall
-- Godmode yourself*: 40, godmodeme, godme
-- Stop Godmode Functions: 41, stopgod
-- Legacy Scientist Autofarm*: 42, legacysciauto, lsciauto
-- Scientist Autofarm*: 43, sciauto
+- More Commands Info Link (cmdinfo): commandsinfo, commandinfo, cmdinfo, info, help
+- Stuff Esp (stuffesp): stuffesp
+- Clean Esp (stuffesp): cleanesp, esp
+- Player Esp (playeresp): playeresp, plresp, pesp
+- Telekinesis (tele): telekinesis, tele, tk
+- Telekinesis Fling (telefling): telekinesisfling, telefling, tkfling, tkf
+- Infinite Ammo (infammo): infammo, ia
+- Minigun (minigun): minigun
+- Rainbow Guns (rainbowguns): rainbowguns, rgbguns, rguns
+- Clear Current Loadout (clearloadout): clearloadout, cloadout
+- Add Gear To Loadout (addgear): addgear
+- Set Primary (setweapon): setweapon
+- Weapon Modifications (weaponmods): weaponmods, wepmods, wpmods, wmods
+- Kill Rose/Rivera (killr): killrivera, killrose, killr
+- NPC Interact (npcinteract): npcinteract
+- NPC Follow (npcfollow): npcfollow
+- Loop Walkspeed (loopws): loopwalkspeed, loopws
+- Infinite Jump (infjump): infinitejumps, infinitejump, infjumps, infjump, float
+- Bring Armed (bringarmed): bringarmed
+- Bring Armed (bringunarmed): bringunarmed
+- Bring Type (bringtype): bringtype, bring
+- Bring Bags (bringbags): bringbags, bb
+- Loop Bring Bags (loopbringbags): loopbringbags, loopbb, lbb
+- Hide NPCs (hidenpcs): hidenpcs, hidenpc, hide
+- Void NPCs (voidnpcs): voidnpcs, voidnpc, void
+- Stop Forced NPCs (stopforcednpcs): stopforced, unfreeze, noforce
+- Disable Cameras (disablecams): disablecams, killcams, byecams, nocams
+- No Fog (nofog): nofog
+- No Flashbang (noflashbang): noflashbang, noflash
+- Unlock Doors (unlockdoors): unlockdoors
+- Fast Bagging (fastbag): fastbag, fb
+- Break Metal Detectors (breakmd): breakmetaldetectors, breakmd
+- Right-Alt Delete (altdel): rightaltdelete, altdelete, altdel
+- Legacy Scientist Autofarm (legacysciauto): legacysciauto, lsciauto
+- Scientist Autofarm (sciauto): sciauto
+- FT Difficulty (settpmdiff): settpmdiff
+- Force Teleport (tpmission): teleportmission, forceteleport, tpmission, forcetp
+- Look Away (lookaway): lookaway
+- Set FOV (setfov): setfov
+- Less Class Restrictions (lessclassres): lessclassres, lcr
+- Show Waypoints (showwp): showwaypoints, showwp
+- Godmode All (godmodeall): godmodeall, godall
+- Godmode Only Yourself (godmodeonlyyourself): godmodeonlyyourself, godmodeonlymyself, godmodeyourself, godmodemyself, godmodeonlyme, godmodeme, godme
+- Stop Godmode Functions (ungodall): ungodall, nogod
