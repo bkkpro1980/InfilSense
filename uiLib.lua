@@ -1024,19 +1024,31 @@ local function initialize()
 
 		text.FocusLost:Connect(function(enter)
 			if enter then
-				local id = string.split(text.Text," ")
-				if quickcmdList[tonumber(id[1])] or quickcmdList[string.lower(id[1])] then
-					local cmd = id[1]
-					table.remove(id,1)
+				local id = string.split(text.Text, " ")
+				local rawCmd = id[1]
+				local cmdKey = quickcmdList[tonumber(rawCmd)] and tonumber(rawCmd) or string.lower(rawCmd)
+
+				if quickcmdList[cmdKey] then
+					table.remove(id, 1) -- remove the command word
+
 					task.spawn(function()
-						values[quickcmdList[cmd][3]] = not values[quickcmdList[cmd][3]]
-						quickcmdList[tonumber(cmd) or string.lower(cmd)][1](unpack(id) or values[quickcmdList[cmd][3]])
+						local toggleKey = quickcmdList[cmdKey][3]
+						values[toggleKey] = not values[toggleKey]
+
+						local func = quickcmdList[cmdKey][1]
+						if #id > 0 then
+							func(unpack(id)) -- works with 1, 2, 3... args
+						else
+							func(values[toggleKey])
+						end
 					end)
+
 					text.Text = ""
 				else
 					text.Text = "Invalid command ID"
 				end
-				task.wait(.5)
+
+				task.wait(0.5)
 			end
 			local ti = TweenInfo.new(.2,Enum.EasingStyle.Quad,Enum.EasingDirection.Out)
 			TS:Create(quickcmdUI,ti,{Position = UDim2.new(.5,0,0,-50)}):Play()

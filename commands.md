@@ -108,7 +108,7 @@
 ## Commands ID for 'Quick Commands' function
 - More Commands Info Link (cmdinfo): commandsinfo, commandinfo, cmdinfo, info, help
 - Stuff Esp (stuffesp): stuffesp
-- Clean Esp (stuffesp): cleanesp, esp
+- Clean Esp (cleanesp): cleanesp, esp
 - Player Esp (playeresp): playeresp, plresp, pesp
 - Telekinesis (tele): telekinesis, tele, tk
 - Telekinesis Fling (telefling): telekinesisfling, telefling, tkfling, tkf
@@ -148,5 +148,5 @@
 - Less Class Restrictions (lessclassres): lessclassres, lcr
 - Show Waypoints (showwp): showwaypoints, showwp
 - Godmode All (godmodeall): godmodeall, godall
-- Godmode Only Yourself (godmodeonlyyourself): godmodeonlyyourself, godmodeonlymyself, godmodeyourself, godmodemyself, godmodeonlyme, godmodeme, godme
+- Godmode Only Yourself (godmodeonlyyourself): godmodeonlyyourself, godmodeonlymyself, godmodeyourself, godmodemyself, godmodeonlyme, - godmodeme, godme
 - Stop Godmode Functions (ungodall): ungodall, nogod
